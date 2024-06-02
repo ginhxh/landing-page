@@ -38,6 +38,7 @@ header {
   justify-content: center;
   align-items: flex-start;
   vertical-align: top;
+  text-align: center;
 }
 
 .all {
@@ -99,4 +100,41 @@ i:hover {
 }
 i {
   cursor: pointer;
+}
+@media (max-width: 1024px) {
+  .all {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: center;
+  }
+
+  .right {
+    width: 100%;
+    max-width: 600px; /* Adjust the max-width as needed */
+    text-align: center; /* Center text on smaller screens */
+  }
+
+  button {
+    width: 100%;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    margin: 15px;
+  }
 }
